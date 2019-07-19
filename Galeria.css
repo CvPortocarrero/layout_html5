@@ -17,7 +17,7 @@
 header{
 	width: 100%;
 	height: 680px;
-	background-image: url(prin4.jpg);
+	background-image: url(Fotos/prin4.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -230,7 +230,7 @@ video {
 .fondo {
 	height: 900px;
 	position: relative;
-	background-image: url(prin1.jpg);
+	background-image: url(Fotos/prin1.jpg);
 	overflow: hidden;
 	background-attachment: fixed;
 	background-position: center;
