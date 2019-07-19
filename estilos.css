@@ -1,0 +1,483 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Mifuente-dos";
+}
+
+@font-face{
+	font-family: "Mifuente";
+	src: url("fonts/DancingScript-Bold.ttf")
+}
+@font-face{
+	font-family: "Mifuente-dos";
+	src: url("fonts/Tangerine-Bold.ttf")
+}
+
+header{
+	width: 100%;
+	height: 680px;
+	background-image: url(prin2.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+}
+
+header .textos{
+	margin-top: 152px;
+}
+header .titulo{
+	font-size: 120px;
+}
+header .subtitulo{
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 32px;
+}
+
+.sesgoAbajo {
+	z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.sesgoArriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+.tienda-uno {
+    text-align: center;
+    font-size: 73px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sobre-nosotros {
+	text-align: center;
+    font-size: 73px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan {
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 40px;
+    color: rgb(24, 16, 16);
+    font-family: "Mifuente-dos";
+    font-size: 42px;
+}
+
+.img-diagonal {
+	width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 5, 143, 0.48);
+}
+
+.encima h2 {
+    position: relative;
+    top: 43%;
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+}
+
+.encima div {
+    position: relative;
+    display: block;
+    top: 43%;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    margin: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 5, 143, 0.48);
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	transition: .7s ease;
+}
+
+.overlay h2 a {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 300;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.card:hover .overlay {
+	height: 100%;
+	cursor: pointer;
+}
+
+.cards {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card {
+	margin: 20px 0;
+	width: 30%;
+	height: 260px;
+	text-align: center;
+	padding: 20px;
+	box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+	position: relative;
+}
+.card h4 {
+	font-size: 25px;
+}
+.card p {
+	font-size: 20px;
+}
+
+.cards img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.fondo {
+	height: 1000px;
+	position: relative;
+	background-image: url(foto13.jpg);
+	overflow: hidden;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 130px;
+}
+
+.sesgoAbajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.titulo-design {
+    font-size: 76px;
+    margin-top: 38px;
+    color: #fff;
+    text-align: center;
+}
+
+.subtitulo-design {
+    font-size: 34px;
+    font-weight: 300;
+    margin-bottom: 65px;
+    color: #fff;
+    text-align: center;
+}
+
+.especial {
+	text-align: right;
+	margin-right: 200px;
+}
+.especial a {
+	text-decoration: none;
+	color: #000;
+}
+
+.slider {
+	width: 50%;
+	height: auto;
+	margin-left: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	border-radius: 20%;
+	box-shadow: 0 0 0 10px #fff,
+	            0 0 0 20px #256361;
+}
+
+.slider ul {
+	width: 400%;
+	height: 336px;
+	display: flex;
+	list-style: none;
+	order: 1;
+	transition: all 0.9s;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+	display: block;
+	width: 25%;
+	height: 60px;
+	cursor: pointer;
+	order: 2;
+	border: 1px solid #fff;
+}
+
+#sbutton1 + label {
+	background: url(foto9.jpg);
+	background-size: 100% 100%;
+}
+
+#sbutton2 + label {
+	background: url(foto6.jpg);
+	background-size: 100% 100%;
+}
+
+#sbutton3 + label {
+	background: url(foto23.jpg);
+	background-size: 100% 100%;
+}
+
+#sbutton4 + label {
+	background: url(foto34.jpg);
+	background-size: 100% 100%;
+}
+
+
+#sbutton1:checked ~ ul {
+	margin-left: 0;
+}
+#sbutton2:checked ~ ul {
+	margin-left: -100%;
+}
+#sbutton3:checked ~ ul {
+	margin-left: -200%;
+}
+#sbutton4:checked ~ ul {
+	margin-left: -300%;
+}
+
+
+
+footer {
+    background: #fff;
+    height: auto;
+}
+
+.titulo-footer {
+	color: #000;
+    text-align: center;
+    font-weight: 400;
+    font-size: 78px;
+}
+
+.subtitulo-footer {
+	color: #000;
+    text-align: center;
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 64px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"] {
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #000;
+    font-family: 'open sans';
+    background: #3b9f9b;
+    margin-bottom: 16px;
+    border-top: 5px solid #000;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: #3b9f9b;
+    padding: 13px;
+    border: none;
+    color: #000;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+    border-top: 5px solid #000;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #000;
+    background: #3b9f9b;
+    width: 96px;
+    border-top: 5px solid #000;
+    cursor: pointer;
+}
+
+.final {
+	width: 100%;
+	height: 110px;
+	background: #041206;
+}
+.final h3 {
+	color: #fff;
+	font-size: 35px;
+	margin-left: 23%;
+	padding-top: 20px;
+}
+.final h4 {
+	text-align: right;
+	color: #fff;
+	font-size: 30px;
+	margin-right: 23%;
+}
+
+
+             /* responsive desing */
+
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+
+    header .titulo {
+        font-size: 75px;
+    }
+
+    .none {
+        display: none
+    }
+
+    .imagenes {
+        flex-grow: 1;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .fondo {
+        height: auto;
+    }
+
+    .especial {
+       display: none;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    header .textos {
+        margin-top: 100px;
+    }
+
+    header .titulo {
+        font-size: 65px;
+    }
+
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    .tienda-uno {
+        font-size: 46px;
+    }
+    .sobre-nosotros {
+    	font-size: 46px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .titulo-design {
+        font-size: 46px;
+    }
+
+    .subtitulo-design {
+        font-size: 20px;
+    }
+}
